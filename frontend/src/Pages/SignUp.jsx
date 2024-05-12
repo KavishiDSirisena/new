@@ -57,7 +57,7 @@ const SignUpPage = () => {
       password
     }
 
-    axios.post("http://localhost:5000/auth/registerUser",newUser).then(()=>{
+    axios.post("https://new-iatt.onrender.com/auth/registerUser",newUser).then(()=>{
       alert("new user added success!...")
       window.location.href='/';
       console.log(newUser)

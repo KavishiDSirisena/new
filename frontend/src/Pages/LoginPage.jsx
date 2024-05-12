@@ -34,7 +34,7 @@ const LoginPage = () => {
       password
     };
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', user);
+      const response = await axios.post('https://new-iatt.onrender.com/auth/login', user);
       localStorage.setItem('token', response.data.token);
       alert('Login successful!');
       console.log(localStorage);
